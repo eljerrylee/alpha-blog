@@ -1,6 +1,12 @@
 # Omakase Ruby styling for Rails
 inherit_gem: { rubocop-rails-omakase: rubocop.yml }
 
+# Update the extensions to use plugins instead of require
+plugins:
+  - rubocop-performance
+  - rubocop-rails
+  - rubocop-minitest
+
 # Overwrite or add rules to create your own house style
 #
 # # Use `[a, [b, c]]` not `[ a, [ b, c ] ]`
